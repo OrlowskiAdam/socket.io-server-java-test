@@ -21,6 +21,7 @@ public class SocketLauncher {
 
         Configuration config = new Configuration();
         config.setHostname("localhost");
+        config.setOrigin("*");
         config.setPort(9092);
 
         final SocketIOServer server = new SocketIOServer(config);
