@@ -18,7 +18,7 @@ public class SocketLauncher {
 
         Configuration config = new Configuration();
         config.setOrigin("*");
-        config.setTransports(Transport.POLLING);
+        config.setTransports(Transport.POLLING, Transport.WEBSOCKET);
         config.setPort(2000);
 
         final SocketIOServer server = new SocketIOServer(config);
