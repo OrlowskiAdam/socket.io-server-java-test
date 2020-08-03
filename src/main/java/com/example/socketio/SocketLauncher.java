@@ -21,6 +21,7 @@ public class SocketLauncher {
 
         Configuration config = new Configuration();
         config.setOrigin("*");
+        config.setPort(2000);
 
         final SocketIOServer server = new SocketIOServer(config);
 
