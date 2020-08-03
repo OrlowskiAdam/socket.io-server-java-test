@@ -1,9 +1,6 @@
 package com.example.socketio;
 
-import com.corundumstudio.socketio.AckRequest;
-import com.corundumstudio.socketio.Configuration;
-import com.corundumstudio.socketio.SocketIOClient;
-import com.corundumstudio.socketio.SocketIOServer;
+import com.corundumstudio.socketio.*;
 import com.corundumstudio.socketio.listener.DataListener;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +18,7 @@ public class SocketLauncher {
 
         Configuration config = new Configuration();
         config.setOrigin("*");
+        config.setTransports(Transport.POLLING);
         config.setPort(2000);
 
         final SocketIOServer server = new SocketIOServer(config);
