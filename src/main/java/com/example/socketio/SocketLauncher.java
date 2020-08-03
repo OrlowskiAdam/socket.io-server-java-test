@@ -20,9 +20,7 @@ public class SocketLauncher {
     public void socketLauncher() {
 
         Configuration config = new Configuration();
-        config.setHostname("localhost");
         config.setOrigin("*");
-        config.setPort(80);
 
         final SocketIOServer server = new SocketIOServer(config);
 
