@@ -17,6 +17,7 @@ public class SocketLauncher {
     public void socketLauncher() {
 
         Configuration config = new Configuration();
+        config.setHostname("wss://localhost");
         config.setOrigin("*");
         config.setTransports(Transport.POLLING, Transport.WEBSOCKET);
         config.setPort(2000);
